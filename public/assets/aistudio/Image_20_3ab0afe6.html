@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "inverse-on-surface": "#eff1f4",
+        "surface-container": "#eceef1",
+        "on-tertiary-fixed-variant": "#005236",
+        "tertiary-fixed": "#94f6c4",
+        "on-error": "#ffffff",
+        "secondary": "#006874",
+        "surface-container-highest": "#e0e3e6",
+        "tertiary-container": "#002e1c",
+        "tertiary": "#00170c",
+        "surface-dim": "#d8dadd",
+        "surface-container-low": "#f2f4f7",
+        "surface-tint": "#4d6079",
+        "on-secondary": "#ffffff",
+        "secondary-fixed-dim": "#79d4e2",
+        "primary": "#001328",
+        "surface-bright": "#f7f9fc",
+        "on-primary-fixed-variant": "#354860",
+        "on-error-container": "#93000a",
+        "inverse-surface": "#2d3133",
+        "surface-container-high": "#e6e8eb",
+        "surface": "#f7f9fc",
+        "tertiary-fixed-dim": "#78d9aa",
+        "error": "#ba1a1a",
+        "on-tertiary": "#ffffff",
+        "on-surface-variant": "#44474d",
+        "on-primary": "#ffffff",
+        "outline": "#74777e",
+        "on-secondary-fixed": "#001f24",
+        "outline-variant": "#c4c6cd",
+        "on-secondary-container": "#006f7b",
+        "on-tertiary-container": "#3c9f74",
+        "secondary-container": "#95f1ff",
+        "primary-fixed": "#d2e4ff",
+        "surface-variant": "#e0e3e6",
+        "on-secondary-fixed-variant": "#004f57",
+        "on-tertiary-fixed": "#002113",
+        "on-surface": "#191c1e",
+        "on-primary-container": "#7c8fab",
+        "on-background": "#191c1e",
+        "surface-container-lowest": "#ffffff",
+        "primary-fixed-dim": "#b4c8e6",
+        "on-primary-fixed": "#071c33",
+        "error-container": "#ffdad6",
+        "background": "#f7f9fc",
+        "secondary-fixed": "#95f1ff",
+        "primary-container": "#14283f",
+        "inverse-primary": "#b4c8e6"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "gutter-tablet": "1rem",
+        "space-md": "0.75rem",
+        "space-xl": "1.5rem",
+        "gutter-desktop": "1.5rem",
+        "space-lg": "1rem",
+        "margin-desktop": "2rem",
+        "space-xs": "0.25rem",
+        "margin-tablet": "1.5rem",
+        "space-sm": "0.5rem",
+        "gutter": "0.75rem",
+        "margin": "1rem"
+      },
+      "fontFamily": {
+        "headline-lg-mobile": ["Inter"],
+        "headline-xl": ["Inter"],
+        "title-md": ["Inter"],
+        "data-metric": ["Inter"],
+        "label-sm": ["Inter"],
+        "body-sm": ["Inter"],
+        "body-md": ["Inter"],
+        "headline-lg": ["Inter"],
+        "headline-xl-mobile": ["Inter"],
+        "label-md": ["Inter"]
+      },
+      "fontSize": {
+        "headline-lg-mobile": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+        "data-metric": ["20px", {"lineHeight": "26px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+        "body-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "headline-xl-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(20,40,63,0.04)] pt-safe"><div class="h-28 px-margin flex flex-col justify-between py-space-xs"><div class="flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="SG PropIntel Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UlhZlWjOnhkU76ztK7H9-S-5iSzto5_H5heWjTBXGRnbKsIwfoxcloDFcL0y8Rwel5cQvIeUOhFXx5O9InFA_GMxhVVG5SkZIpopznXXnXgieeAU_a91j-BQqNwhv5RuvT9pqRNV85bg5h9lP9s47DtE2PXPsSDO9MleWXek6l9yuHZ1yghNs82rtteQPIURGtNBsDU8JAUBD6GGT11JTDw4j77aJCwcSjCG366GIeOjTu6cvzFjUiDqq4"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary-container leading-none tracking-tight">SG PropIntel</span><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block animate-pulse"></span>URA &amp; HDB Live Sync</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary-container rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(20,40,63,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByJ1ToLMtPR035wBa5wivYVHARbMIwKXMAclnn7Pl4a4MY2OevpKouou8LZRsZmY95s_mWDLPPw5aAOmwpPF8XYXNakl20lSyl5XQwC4csFOBy8pVaiNzfXUvxBS9pAcixA3ecSS93vIvosTVcuga_H_EbL2wtwYG8V498B5IVFxX1fvoERw-9zDQQRSptuf5UEFpKuLe0cP15qeHN8sPi46dd8SBOnyXH-bcn35lEXrrQWeSTCSqdCA"/></div></div><div class="flex items-center justify-between bg-surface-container-low p-space-xs rounded-full"><button class="flex-1 py-1 text-center font-label-md text-label-md rounded-full bg-primary-container text-on-primary shadow-[0_1px_3px_rgba(20,40,63,0.06)] transition-all">Buyer</button><button class="flex-1 py-1 text-center font-label-md text-label-md rounded-full text-on-surface-variant hover:text-on-surface transition-all">Seller</button><button class="flex-1 py-1 text-center font-label-md text-label-md rounded-full text-on-surface-variant hover:text-on-surface transition-all">Agent</button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-28 pb-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification -->
+<div class="fixed top-24 left-1/2 -translate-x-1/2 z-50 opacity-0 pointer-events-none transition-all duration-300 w-11/12 max-w-sm bg-primary text-on-primary px-space-md py-space-sm rounded-xl shadow-xl flex items-center justify-between" id="toastNotification">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-primary" id="toastMsg">Offer updated successfully</span>
+</div>
+<button class="text-on-primary/70 hover:text-on-primary" onclick="dismissToast()">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- Role Indicator & URA Live Sync Status -->
+<div class="px-margin pt-space-md pb-space-sm bg-surface">
+<div class="flex items-center justify-between bg-surface-container p-space-xs rounded-full shadow-sm mb-space-xs">
+<button class="flex-1 py-1 text-center font-label-md text-label-md rounded-full text-on-surface-variant hover:text-on-surface transition-all">Buyer</button>
+<button class="flex-1 py-1 text-center font-label-md text-label-md rounded-full bg-primary text-on-primary shadow-sm font-semibold transition-all">Seller</button>
+<button class="flex-1 py-1 text-center font-label-md text-label-md rounded-full text-on-surface-variant hover:text-on-surface transition-all">Agent</button>
+</div>
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block animate-ping"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Official Property Owner Portal</span>
+</div>
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-space-xs py-0.5 rounded-full flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[12px] text-secondary">verified_user</span>
+        URA &amp; HDB Synced
+      </span>
+</div>
+</div>
+<div class="px-margin space-y-space-md pb-space-xl">
+<!-- Active Property Master Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<!-- Watermark Badge for Prestige -->
+<div class="absolute -right-6 -bottom-6 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[140px] text-primary">apartment</span>
+</div>
+<div class="flex items-start justify-between relative z-10 mb-space-sm">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-full font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-fixed"></span>
+              Active Listing · Day 18 on Market
+            </span>
+<span class="bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-full font-label-sm text-label-sm">
+              SLA Verified Title
+            </span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight font-bold">Bishan Loft #14-06</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>
+            D20 · 33 Bishan St 21 · 3-Bed EC · 1,141 sqft (High Floor)
+          </p>
+</div>
+<button aria-label="Edit Listing Details" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-secondary-container transition-colors shadow-sm shrink-0" onclick="editListingPrompt()">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+<!-- Financial Metrics Ribbon -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs border-t border-surface-container-high/60 relative z-10">
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Target Asking Price</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-data-metric text-data-metric text-primary">S$1,620,000</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium block">S$1,420 psf · Firm</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">URA/AVM Valuation</span>
+<span class="bg-secondary/10 text-secondary px-1.5 py-0.2 rounded font-label-sm text-label-sm font-semibold">Parity 100%</span>
+</div>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-data-metric text-data-metric text-primary">S$1,620,000</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Optimal Sweet-Spot</span>
+</div>
+</div>
+</div>
+<!-- Visual Traction & Funnel Vitals (2x2 Grid) -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<h3 class="font-title-md text-title-md text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">trending_up</span>
+          Listing Performance &amp; Traction
+        </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded-full">Past 7 Days</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Impressions</span>
+<span class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+</span>
+</div>
+<div class="my-1">
+<span class="font-data-metric text-data-metric text-primary">1,428</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container block font-medium">↑ +14% vs D20 avg</span>
+</div>
+<!-- Micro Sparkline SVG -->
+<svg class="w-full h-4 text-secondary stroke-current fill-none stroke-[2]" viewbox="0 0 100 20">
+<path d="M0,15 Q25,18 45,10 T80,5 T100,2"></path>
+</svg>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Shortlisted</span>
+<span class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</span>
+</div>
+<div class="my-1">
+<span class="font-data-metric text-data-metric text-primary">46 buyers</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium block">High Buyer Interest</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Viewings Done</span>
+<span class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">meeting_room</span>
+</span>
+</div>
+<div class="my-1">
+<span class="font-data-metric text-data-metric text-primary">9 sessions</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block font-medium">3 scheduled this wknd</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Optimal Pace</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Formal Enquiries</span>
+<span class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">support_agent</span>
+</span>
+</div>
+<div class="my-1">
+<span class="font-data-metric text-data-metric text-primary">14 prospects</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container block font-medium">8 Pre-Approved IPA</span>
+</div>
+<span class="bg-secondary/10 text-secondary text-[10px] font-semibold px-1 rounded self-start">57% Financial Readied</span>
+</div>
+</div>
+</div>
+<!-- Active Inbound Offers & Negotiation Pipeline -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-primary font-semibold">Inbound Offers &amp; Enquiries</h3>
+<span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">2 Active</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Audit Trail</span>
+</div>
+<!-- Offer 1 (Top Pick) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary text-on-primary text-[10px] font-semibold px-3 py-1 rounded-bl-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-tertiary-fixed">stars</span>
+          Top Recommendation
+        </div>
+<div class="pr-20">
+<span class="font-body-md text-body-md text-primary font-bold block">Tan Wei Ming</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+            IPA S$1.60M Approved · DBS Bank
+          </span>
+</div>
+<div class="my-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Offered Purchase Price</span>
+<span class="font-data-metric text-data-metric text-primary">S$1,590,000</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>S$1,393 psf</span>
+<span class="text-secondary font-semibold">98.1% of Asking Price (-S$30k)</span>
+</div>
+</div>
+<!-- Terms Breakdown -->
+<div class="grid grid-cols-3 gap-1 mb-space-sm bg-surface-container-lowest p-1 rounded font-label-sm text-label-sm text-on-surface-variant">
+<div class="text-center p-1 bg-surface-container-low rounded">
+<span class="block text-primary font-semibold">14-Day</span>
+            OTP Validity
+          </div>
+<div class="text-center p-1 bg-surface-container-low rounded">
+<span class="block text-primary font-semibold">1% S$15.9k</span>
+            Cash Option Ready
+          </div>
+<div class="text-center p-1 bg-surface-container-low rounded">
+<span class="block text-primary font-semibold">8 Weeks</span>
+            Completion
+          </div>
+</div>
+<!-- Negotiation Action Strip -->
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 py-2 bg-primary text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary-container transition-all text-center shadow-sm" onclick="handleAcceptOffer('S$1,590,000')">
+            Review Offer
+          </button>
+<button class="flex-1 py-2 bg-secondary-container text-on-secondary-container font-label-md text-label-md rounded-lg hover:bg-secondary-fixed-dim transition-all text-center font-semibold" onclick="handleCounterOffer('Tan Wei Ming')">
+            Counter-Offer
+          </button>
+<button aria-label="WhatsApp Agent" class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center hover:bg-surface-container transition-colors shrink-0" onclick="contactAgent('Regarding Tan Wei Ming Offer')">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+</div>
+</div>
+<!-- Offer 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-start justify-between mb-space-xs">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md text-primary font-bold">Dr. K. Rajan</span>
+<span class="bg-secondary/10 text-secondary text-[10px] font-bold px-1.5 py-0.5 rounded-full">Cash Rich</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Immediate Funds Available · No Contingency</span>
+</div>
+<span class="bg-error-container text-on-error-container text-[11px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">timer</span>
+            Expiring in 24h
+          </span>
+</div>
+<div class="flex items-baseline justify-between mb-space-xs bg-surface-container-low p-space-sm rounded-lg">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Submitted Bid</span>
+<span class="font-data-metric text-data-metric text-primary block">S$1,560,000</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-error font-medium block">96.3% of asking</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">S$1,367 psf</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 py-2 bg-surface-container text-primary hover:bg-surface-container-high font-label-md text-label-md rounded-lg transition-all font-semibold" onclick="handleQuickCounter('Dr. K. Rajan', 'S$1,600,000')">
+            Counter S$1.60M Sweet-Spot
+          </button>
+<button class="px-3 py-2 text-on-surface-variant font-label-md text-label-md hover:text-error transition-colors" onclick="handleDeclineOffer('Dr. K. Rajan')">
+            Decline
+          </button>
+</div>
+</div>
+</div>
+<!-- Upcoming Viewings Cadence & Schedule -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<h3 class="font-title-md text-title-md text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">calendar_month</span>
+          Upcoming Viewings
+        </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Calendar Sync Active</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<!-- Viewing 1 -->
+<div class="flex items-start gap-space-sm p-space-sm bg-surface-container-low rounded-lg">
+<div class="w-12 h-12 rounded-lg bg-primary text-on-primary flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Sat</span>
+<span class="font-body-md text-body-md font-bold leading-none">28</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">2:30 PM – 3:15 PM</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold px-2 py-0.5 rounded-full">Confirmed</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-medium truncate">Marcus &amp; Cheryl Lim</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Accompanied by Eileen Tan (PropNex Lead Agent)</p>
+</div>
+</div>
+<!-- Viewing 2 -->
+<div class="flex items-start gap-space-sm p-space-sm bg-surface-container-low rounded-lg">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high text-primary flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Sun</span>
+<span class="font-body-md text-body-md font-bold leading-none">29</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">4:00 PM – 5:00 PM</span>
+<span class="bg-secondary-container text-on-secondary-container text-[10px] font-bold px-2 py-0.5 rounded-full">2 Buyers</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-medium truncate">Open House Inspection Window</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Passcode Access / Reception desk briefed</p>
+</div>
+</div>
+<button class="w-full py-2.5 bg-surface-container text-primary font-label-md text-label-md rounded-lg hover:bg-surface-container-high transition-colors font-semibold flex items-center justify-center gap-1.5" onclick="manageCalendarPrompt()">
+<span class="material-symbols-outlined text-[18px]">add_alarm</span>
+          + Add Blackout Dates / Manage Access
+        </button>
+</div>
+</div>
+<!-- Market Pulse & Competing Bishan Loft Units -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<h3 class="font-title-md text-title-md text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">pie_chart</span>
+          Submarket Pulse &amp; Direct Comps
+        </h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">URA Real-time</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-primary font-bold">3 Competing Units in Bishan Loft</span>
+<span class="text-[11px] font-label-sm text-on-surface-variant">D20 Inventory: -4% QoQ (Tight)</span>
+</div>
+<!-- Comp 1 -->
+<div class="flex items-center justify-between py-1 border-b border-surface-container-high/60">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-body-sm font-semibold text-primary">#11-02 (Stack 02)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1,141 sqft</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Asking S$1.63M (S$1,428 psf) · 32 days</span>
+</div>
+<span class="bg-surface-container text-on-surface-variant text-[11px] px-2 py-0.5 rounded font-medium">Higher Floor</span>
+</div>
+<!-- Comp 2 -->
+<div class="flex items-center justify-between py-1">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-body-sm font-semibold text-primary">#08-04 (Stack 04)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1,141 sqft</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Asking S$1.58M (S$1,385 psf) · OTP Issued</span>
+</div>
+<span class="bg-secondary-container text-on-secondary-container text-[11px] px-2 py-0.5 rounded font-bold">Offer Pending</span>
+</div>
+<!-- Submarket Advisory Note -->
+<div class="p-space-xs bg-secondary/5 rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5 shrink-0">lightbulb</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+<span class="font-semibold text-primary">Strategic Pricing Edge:</span> Since #08-04 is under option at ~S$1.58M, your #14-06 (high floor unblocked) is currently the highest-converting active unit.
+          </p>
+</div>
+</div>
+</div>
+<!-- Quick Action Shortcuts & Agent Connect -->
+<div class="space-y-space-xs">
+<!-- Primary Strategic Proceeds Calculator CTA (Links logically to Screen 16) -->
+<a class="block w-full p-space-md bg-primary text-on-primary rounded-xl shadow-md hover:bg-primary-container transition-all" href="#screen16-net-proceeds" onclick="showToast('Loading Seller Net Proceeds &amp; Decoupling Model...')">
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm text-tertiary-fixed uppercase tracking-wider font-semibold">Interactive Seller Tool</span>
+<h4 class="font-title-md text-title-md font-bold">Selling Price &amp; Net Proceeds Strategy</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">Calculate CPF refund, outstanding mortgage payback &amp; cash in hand.</p>
+</div>
+<span class="material-symbols-outlined text-[24px] text-tertiary-fixed ml-2 shrink-0">arrow_forward</span>
+</div>
+</a>
+<!-- Secondary Quick Utilities -->
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="p-space-sm bg-surface-container-lowest text-primary rounded-xl shadow-sm hover:bg-surface-container-low transition-colors text-left flex items-center gap-space-xs" onclick="downloadKitPrompt()">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+</span>
+<div>
+<span class="font-label-md text-label-md block font-semibold leading-tight">Seller Kit</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Floorplan &amp; Caveats</span>
+</div>
+</button>
+<button class="p-space-sm bg-surface-container-lowest text-primary rounded-xl shadow-sm hover:bg-surface-container-low transition-colors text-left flex items-center gap-space-xs" onclick="contactAgent('General Listing Check-in')">
+<span class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px] text-on-secondary-container">chat</span>
+</span>
+<div>
+<span class="font-label-md text-label-md block font-semibold leading-tight">Eileen Tan</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">PropNex Lead Agent</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Institutional Footer Attribution & Regulatory Compliance -->
+<div class="pt-space-sm pb-space-lg text-center space-y-1">
+<div class="flex items-center justify-center gap-2">
+<span class="bg-surface-container px-2 py-0.5 rounded-full font-label-sm text-label-sm text-on-surface-variant">CEA Registered: R048291J</span>
+<span class="bg-surface-container px-2 py-0.5 rounded-full font-label-sm text-label-sm text-on-surface-variant">HDB/URA Caveat API v4</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant/80 px-margin">
+        Data refreshed every 4 hours against official Singapore Land Authority caveats. Private wealth calculations are indicative benchmarks.
+      </p>
+</div>
+</div>
+</div>
+<script>
+  function showToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const msg = document.getElementById('toastMsg');
+    if (!toast || !msg) return;
+    msg.textContent = message;
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      dismissToast();
+    }, 3800);
+  }
+
+  function dismissToast() {
+    const toast = document.getElementById('toastNotification');
+    if (toast) {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0', 'pointer-events-none');
+    }
+  }
+
+  function handleAcceptOffer(amount) {
+    showToast(`Opening negotiation review for ${amount}... Option document ready.`);
+  }
+
+  function handleCounterOffer(buyerName) {
+    showToast(`Drafting counter-offer to ${buyerName}. Agent Eileen notified.`);
+  }
+
+  function handleQuickCounter(buyerName, counterPrice) {
+    showToast(`Counter of ${counterPrice} dispatched to ${buyerName}`);
+  }
+
+  function handleDeclineOffer(buyerName) {
+    showToast(`Bid from ${buyerName} archived politely with market comps attached.`);
+  }
+
+  function editListingPrompt() {
+    showToast('Editing Bishan Loft #14-06 specs, photos & asking price parameters...');
+  }
+
+  function contactAgent(context) {
+    showToast(`Connecting directly with Eileen Tan (PropNex): "${context}"`);
+  }
+
+  function manageCalendarPrompt() {
+    showToast('Calendar manager opened: Block viewing windows or sync with Google Cal.');
+  }
+
+  function downloadKitPrompt() {
+    showToast('Compiling URA caveat deck & certified title PDF (1.4MB)...');
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(20,40,63,0.05)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined text-[22px]">travel_explore</span><span class="font-label-sm text-label-sm">Explore</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="valuation" href="#"><span class="material-symbols-outlined text-[22px]">calculate</span><span class="font-label-sm text-label-sm">Valuation</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="comparables" href="#"><span class="material-symbols-outlined text-[22px]">insert_chart</span><span class="font-label-sm text-label-sm">Caveats</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="profile-crm" href="#"><span class="material-symbols-outlined text-[22px]">manage_accounts</span><span class="font-label-sm text-label-sm">CRM</span></a></div></nav></body></html>

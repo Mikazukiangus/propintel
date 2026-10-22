@@ -1,0 +1,6 @@
+{
+  "name": "SG PropIntel",
+  "description": "Institutional-grade Singapore property intelligence, valuation engine, and transaction analytics for buyers, sellers, and CEA agents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

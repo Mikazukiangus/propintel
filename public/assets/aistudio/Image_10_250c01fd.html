@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "inverse-on-surface": "#eff1f4",
+        "surface-container": "#eceef1",
+        "on-tertiary-fixed-variant": "#005236",
+        "tertiary-fixed": "#94f6c4",
+        "on-error": "#ffffff",
+        "secondary": "#006874",
+        "surface-container-highest": "#e0e3e6",
+        "tertiary-container": "#002e1c",
+        "tertiary": "#00170c",
+        "surface-dim": "#d8dadd",
+        "surface-container-low": "#f2f4f7",
+        "surface-tint": "#4d6079",
+        "on-secondary": "#ffffff",
+        "secondary-fixed-dim": "#79d4e2",
+        "primary": "#001328",
+        "surface-bright": "#f7f9fc",
+        "on-primary-fixed-variant": "#354860",
+        "on-error-container": "#93000a",
+        "inverse-surface": "#2d3133",
+        "surface-container-high": "#e6e8eb",
+        "surface": "#f7f9fc",
+        "tertiary-fixed-dim": "#78d9aa",
+        "error": "#ba1a1a",
+        "on-tertiary": "#ffffff",
+        "on-surface-variant": "#44474d",
+        "on-primary": "#ffffff",
+        "outline": "#74777e",
+        "on-secondary-fixed": "#001f24",
+        "outline-variant": "#c4c6cd",
+        "on-secondary-container": "#006f7b",
+        "on-tertiary-container": "#3c9f74",
+        "secondary-container": "#95f1ff",
+        "primary-fixed": "#d2e4ff",
+        "surface-variant": "#e0e3e6",
+        "on-secondary-fixed-variant": "#004f57",
+        "on-tertiary-fixed": "#002113",
+        "on-surface": "#191c1e",
+        "on-primary-container": "#7c8fab",
+        "on-background": "#191c1e",
+        "surface-container-lowest": "#ffffff",
+        "primary-fixed-dim": "#b4c8e6",
+        "on-primary-fixed": "#071c33",
+        "error-container": "#ffdad6",
+        "background": "#f7f9fc",
+        "secondary-fixed": "#95f1ff",
+        "primary-container": "#14283f",
+        "inverse-primary": "#b4c8e6"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "gutter-tablet": "1rem",
+        "space-md": "0.75rem",
+        "space-xl": "1.5rem",
+        "gutter-desktop": "1.5rem",
+        "space-lg": "1rem",
+        "margin-desktop": "2rem",
+        "space-xs": "0.25rem",
+        "margin-tablet": "1.5rem",
+        "space-sm": "0.5rem",
+        "gutter": "0.75rem",
+        "margin": "1rem"
+      },
+      "fontFamily": {
+        "headline-lg-mobile": ["Inter"],
+        "headline-xl": ["Inter"],
+        "title-md": ["Inter"],
+        "data-metric": ["Inter"],
+        "label-sm": ["Inter"],
+        "body-sm": ["Inter"],
+        "body-md": ["Inter"],
+        "headline-lg": ["Inter"],
+        "headline-xl-mobile": ["Inter"],
+        "label-md": ["Inter"]
+      },
+      "fontSize": {
+        "headline-lg-mobile": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+        "data-metric": ["20px", {"lineHeight": "26px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+        "body-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "headline-xl-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(20,40,63,0.04)] pt-safe"><div class="h-28 px-margin flex flex-col justify-between py-space-xs"><div class="flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="SG PropIntel Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UlhZlWjOnhkU76ztK7H9-S-5iSzto5_H5heWjTBXGRnbKsIwfoxcloDFcL0y8Rwel5cQvIeUOhFXx5O9InFA_GMxhVVG5SkZIpopznXXnXgieeAU_a91j-BQqNwhv5RuvT9pqRNV85bg5h9lP9s47DtE2PXPsSDO9MleWXek6l9yuHZ1yghNs82rtteQPIURGtNBsDU8JAUBD6GGT11JTDw4j77aJCwcSjCG366GIeOjTu6cvzFjUiDqq4"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary-container leading-none tracking-tight">SG PropIntel</span><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block animate-pulse"></span>URA &amp; HDB Live Sync</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary-container rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(20,40,63,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByJ1ToLMtPR035wBa5wivYVHARbMIwKXMAclnn7Pl4a4MY2OevpKouou8LZRsZmY95s_mWDLPPw5aAOmwpPF8XYXNakl20lSyl5XQwC4csFOBy8pVaiNzfXUvxBS9pAcixA3ecSS93vIvosTVcuga_H_EbL2wtwYG8V498B5IVFxX1fvoERw-9zDQQRSptuf5UEFpKuLe0cP15qeHN8sPi46dd8SBOnyXH-bcn35lEXrrQWeSTCSqdCA"/></div></div><div class="flex items-center justify-between bg-surface-container-low p-space-xs rounded-full"><button class="flex-1 py-1 text-center font-label-md text-label-md rounded-full bg-primary-container text-on-primary shadow-[0_1px_3px_rgba(20,40,63,0.06)] transition-all">Buyer</button><button class="flex-1 py-1 text-center font-label-md text-label-md rounded-full text-on-surface-variant hover:text-on-surface transition-all">Seller</button><button class="flex-1 py-1 text-center font-label-md text-label-md rounded-full text-on-surface-variant hover:text-on-surface transition-all">Agent</button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-28 pb-20 bg-surface"><div class="flex flex-col w-full relative">
+<!-- Interactive & Floating Sub-Navigation Bar -->
+<div class="sticky top-0 z-40 bg-surface/95 backdrop-blur-md px-margin py-space-sm flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<button aria-label="Back to listings" class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container active:scale-95 transition-transform" onclick="history.back()">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary-container leading-none truncate max-w-[170px]">Bishan Loft #14-06</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>D20 · Bishan
+        </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Share listing" class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[19px]">share</span>
+</button>
+<button aria-label="Bookmark property" class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container active:scale-95 transition-transform" id="bookmarkBtn" onclick="toggleBookmark()">
+<span class="material-symbols-outlined text-[20px]" id="bookmarkIcon">bookmark_border</span>
+</button>
+</div>
+</div>
+<div class="px-margin flex flex-col gap-space-lg pt-space-sm">
+<!-- Statutory Micro-Badges Row -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-0.5 scrollbar-none">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-lowest shadow-sm text-on-primary-fixed-variant font-label-sm text-label-sm shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>URA Verified Caveat
+      </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-lowest shadow-sm text-on-surface-variant font-label-sm text-label-sm shrink-0">
+        Privatised EC
+      </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-lowest shadow-sm text-on-surface-variant font-label-sm text-label-sm shrink-0">
+        99-yr (TOP 2003)
+      </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-lowest shadow-sm text-on-surface-variant font-label-sm text-label-sm shrink-0">
+        High Floor
+      </span>
+</div>
+<!-- Media Carousel Section with Architectural Photography -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container shadow-sm">
+<div class="relative aspect-[4/3] w-full">
+<img alt="Bishan Loft interior" class="w-full h-full object-cover" data-alt="Modern upscale Scandinavian-minimalist condominium living room in Singapore on high floor with floor-to-ceiling glass doors opening to unblocked lush canopy views of Bishan-Ang Mo Kio Park. Natural daylighting, architectural precision, soft neutral linen tones, refined marble coffee table, indoor tropical fiddle leaf fig, institutional quality real estate photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZjE8gLYoLmC9RufEV5xijiyDDAWJclcyO4qoAIrsbZclSZCTGnLLYJIjgXARLfmBCw_PqU-ycrh_TdC76ziQeFLphzPGze06sa7lXjYNugxfSPkV8QXSl87JXftiNnSlX2mFOMxZIpmWZd59IAbgiboKKlHGdGhLdSgCTZgtV8jnWshH0_9M8YCm2QriTvG6CU_uUHXjMY147PNt4oP23usTt5seCuqW55KXnIFAhalhxcrirAdH5Ig"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-primary/20 pointer-events-none"></div>
+<!-- Live Badges on Media -->
+<div class="absolute top-space-sm left-space-sm flex flex-wrap gap-1.5 z-10">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container/85 text-on-primary font-label-sm text-label-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[13px]">view_in_ar</span> 360° Virtual Tour
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-surface-container-lowest/90 text-primary-container font-label-sm text-label-sm backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-[13px] text-secondary">verified</span> Cadastral Plan
+          </span>
+</div>
+<div class="absolute top-space-sm right-space-sm z-10">
+<span class="px-2 py-1 rounded-full bg-primary/80 text-on-primary font-label-sm text-label-sm backdrop-blur-md">
+            1 / 18
+          </span>
+</div>
+<!-- Media bottom micro-specs bar overlay -->
+<div class="absolute bottom-space-sm inset-x-space-sm flex items-center justify-between text-on-primary z-10">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm flex items-center gap-1 bg-surface-container-lowest/20 backdrop-blur-md px-2 py-0.5 rounded-full text-on-primary">
+<span class="material-symbols-outlined text-[12px]">wb_sunny</span> N-S Orientation
+            </span>
+<span class="font-label-sm text-label-sm flex items-center gap-1 bg-surface-container-lowest/20 backdrop-blur-md px-2 py-0.5 rounded-full text-on-primary">
+<span class="material-symbols-outlined text-[12px]">forest</span> Park Horizon
+            </span>
+</div>
+<!-- Thumbnail Dots -->
+<div class="flex items-center gap-1">
+<span class="w-4 h-1.5 rounded-full bg-secondary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary/60"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary/60"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary/60"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Core Valuation & Pricing Module (Institutional Financial Intelligence) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_4px_rgba(20,40,63,0.06)] flex flex-col gap-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Asking Price · Negotiable</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Fair Valuation Parity
+          </span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-xl-mobile text-headline-xl-mobile text-primary-container tracking-tight">S$1,620,000</span>
+<span class="font-label-md text-label-md text-on-surface-variant">S$1,420 psf</span>
+</div>
+</div>
+<!-- Algorithmic Valuation Model (AVM) Spread Analysis -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">psychology</span>
+<span class="font-label-md text-label-md text-primary-container">Hedonic AVM Model Value</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Conf. ±3.4%</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-title-md text-title-md text-primary-container">S$1,620,000</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed-variant">Model Band: S$1.56M – S$1.67M</span>
+</div>
+<!-- Visual Uncertainty & Parity Bar -->
+<div class="w-full h-2 rounded-full bg-surface-container-high relative overflow-hidden flex items-center">
+<div class="absolute left-[15%] right-[15%] h-full bg-secondary-fixed rounded-full"></div>
+<div class="absolute left-1/2 -translate-x-1/2 w-3 h-3 bg-secondary rounded-full shadow-sm"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-0.5">
+<span>-3.4% Undervalued</span>
+<span class="font-label-md text-label-md text-secondary">At Benchmark</span>
+<span>+3.4% Premium</span>
+</div>
+</div>
+<!-- 5-Year Capital Appreciation Stat -->
+<div class="flex items-center justify-between py-1 px-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-full bg-tertiary-fixed/40 flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">5-Yr Development Resale ROI</span>
+<span class="font-label-md text-label-md text-primary-container">+18.4% Net Appreciation</span>
+</div>
+</div>
+<a class="font-label-sm text-label-sm text-secondary hover:underline flex items-center gap-0.5" href="#valuation-details">
+          AVM Breakdown <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Key Property Specifications (Tabular Grid Matrix) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_4px_rgba(20,40,63,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-primary-container">Spatial &amp; Cadastral Specs</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SLA Cadastral #33-1406</span>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col p-2.5 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Strata Floor Area</span>
+<span class="font-data-metric text-data-metric text-primary-container mt-0.5">1,141 <span class="font-label-sm text-label-sm text-on-surface-variant">sqft (106 sqm)</span></span>
+</div>
+<div class="flex flex-col p-2.5 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Configuration</span>
+<span class="font-data-metric text-data-metric text-primary-container mt-0.5">3 Bed · 2 Bath</span>
+</div>
+<div class="flex flex-col p-2.5 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Floor Level &amp; Stack</span>
+<span class="font-title-md text-title-md text-primary-container mt-0.5">#14-06 <span class="font-label-sm text-label-sm text-secondary">(High Tier)</span></span>
+</div>
+<div class="flex flex-col p-2.5 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Remaining Lease</span>
+<span class="font-title-md text-title-md text-primary-container mt-0.5">76 Years <span class="font-label-sm text-label-sm text-on-surface-variant">(from 2001)</span></span>
+</div>
+<div class="flex flex-col p-2.5 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Solar Facing</span>
+<span class="font-title-md text-title-md text-primary-container mt-0.5">North-South <span class="font-label-sm text-label-sm text-on-surface-variant">(0 West Sun)</span></span>
+</div>
+<div class="flex flex-col p-2.5 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MCST Maintenance</span>
+<span class="font-title-md text-title-md text-primary-container mt-0.5">S$310 <span class="font-label-sm text-label-sm text-on-surface-variant">/ month</span></span>
+</div>
+<div class="flex flex-col p-2.5 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tenure Classification</span>
+<span class="font-title-md text-title-md text-primary-container mt-0.5">Privatised EC</span>
+</div>
+<div class="flex flex-col p-2.5 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Interior Condition</span>
+<span class="font-title-md text-title-md text-primary-container mt-0.5">Turnkey Ready</span>
+</div>
+</div>
+</div>
+<!-- OneMap Verified School Matrix & MOE Primary 1 Priority Buffer -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_4px_rgba(20,40,63,0.06)] flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>OneMap Official Cadastral Buffer
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blk 33 Geocode</span>
+</div>
+<h2 class="font-title-md text-title-md text-primary-container">MOE P1 Priority Registration</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calculated based on Singapore Land Authority (SLA) boundary coordinates for P1 Phase 2C priority allocation.</p>
+</div>
+<!-- Within 1KM (Highest Priority Band) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-md text-label-md text-primary-container flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">star</span>
+            Within 1km Buffer (Highest Priority)
+          </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Phase 2C Priority</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-secondary-fixed/20">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary-container leading-tight">Catholic High School (Primary)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SAP Autonomous Boys School</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-data-metric text-data-metric text-secondary">0.72 km</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">9 min walk</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary-container leading-tight">Townsville Primary School</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Co-ed Government School</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-data-metric text-data-metric text-primary-container">0.94 km</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">12 min walk</span>
+</div>
+</div>
+</div>
+<!-- 1km to 2km Buffer -->
+<div class="flex flex-col gap-space-xs pt-1">
+<span class="font-label-md text-label-md text-on-surface-variant">Within 1km – 2km Buffer</span>
+<div class="flex items-center justify-between py-1.5 px-2">
+<span class="font-body-md text-body-md text-primary-container">Kuo Chuan Presbyterian Primary</span>
+<span class="font-label-md text-label-md text-on-surface-variant">1.35 km</span>
+</div>
+<div class="flex items-center justify-between py-1.5 px-2">
+<span class="font-body-md text-body-md text-primary-container">Teck Ghee Primary School</span>
+<span class="font-label-md text-label-md text-on-surface-variant">1.48 km</span>
+</div>
+<div class="flex items-center justify-between py-1.5 px-2">
+<span class="font-body-md text-body-md text-primary-container">Ai Tong School (Bishan/Sin Ming)</span>
+<span class="font-label-md text-label-md text-on-surface-variant">1.85 km</span>
+</div>
+</div>
+<!-- Transit Connectivity & Surrounding Nodes -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-2">
+<span class="font-label-md text-label-md text-primary-container">Key Urban Amenities &amp; Transit</span>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="flex flex-col items-center bg-surface-container-lowest p-2 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-secondary">train</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Bishan MRT (NS/CC)</span>
+<span class="font-label-md text-label-md text-primary-container font-semibold">420m (6 min)</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-lowest p-2 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-secondary">local_mall</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Junction 8 Mall</span>
+<span class="font-label-md text-label-md text-primary-container font-semibold">480m</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-lowest p-2 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-secondary">park</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Bishan-AMK Park</span>
+<span class="font-label-md text-label-md text-primary-container font-semibold">250m</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Mortgage Underwriting & TDSR Stress Analysis -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_4px_rgba(20,40,63,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container">calculate</span>
+<h2 class="font-title-md text-title-md text-primary-container">Financial Outlay &amp; TDSR</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">75% LTV (25 Yr)</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estimated Monthly Repayment (3.15% SORA)</span>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-xl-mobile text-headline-xl-mobile text-primary-container">S$5,134 <span class="font-body-sm text-body-sm text-on-surface-variant">/ month</span></span>
+<span class="font-label-sm text-label-sm text-secondary">Principal + Interest</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span>MAS Stress Rate (4.00%):</span>
+<span class="font-label-md text-label-md text-primary-container">S$5,801 / month</span>
+</div>
+</div>
+<!-- Capital Breakdown Matrix -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-primary-container">Initial Capital Breakdown (SC 1st Home)</span>
+<div class="flex items-center justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Min 5% Statutory Cash</span>
+<span class="font-label-md text-label-md text-primary-container">S$81,000</span>
+</div>
+<div class="flex items-center justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>20% Downpayment (CPF OA / Cash)</span>
+<span class="font-label-md text-label-md text-primary-container">S$324,000</span>
+</div>
+<div class="flex items-center justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Buyer's Stamp Duty (IRAS BSD 2023)</span>
+<span class="font-label-md text-label-md text-primary-container">S$49,400</span>
+</div>
+<div class="flex items-center justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Additional Buyer's Stamp Duty (ABSD)</span>
+<span class="font-label-md text-label-md text-secondary">S$0 (Exempt)</span>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-surface-container-high text-primary-container font-label-md text-label-md text-center active:bg-surface-container-highest transition-colors flex items-center justify-center gap-1.5">
+        Customise Loan Tenure &amp; CPF Allocation
+        <span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+<!-- Verified REALIS Development Caveats & Transaction Benchmark -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_4px_rgba(20,40,63,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-title-md text-title-md text-primary-container">URA REALIS Transaction Feed</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Same Project Comparables (Bishan Loft)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Live Sync
+        </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Comp 1: Identical Stack -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-primary-container">Stack #14-06</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary/15 text-secondary font-label-sm text-label-sm">Identical Stack</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Jan 2025</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-data-metric text-data-metric text-primary-container">S$1,638,000</span>
+<span class="font-label-md text-label-md text-on-surface-variant">S$1,435 psf · 1,141 sqft</span>
+</div>
+</div>
+<!-- Comp 2: Mid Floor Comparable -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-primary-container">Stack #11-02</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Similar Layout</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nov 2024</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-data-metric text-data-metric text-primary-container">S$1,590,000</span>
+<span class="font-label-md text-label-md text-on-surface-variant">S$1,393 psf · 1,141 sqft</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2 text-center font-label-md text-label-md text-secondary hover:underline flex items-center justify-center gap-1">
+        Explore All 18 Caveats in D20 Hub
+        <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+<!-- Verified Statutory CEA Listing Agent Dossier Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_4px_rgba(20,40,63,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Verified Appointed Agent</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">verified_user</span> CEA Verified
+        </span>
+</div>
+<div class="flex items-center gap-space-md">
+<img alt="Eileen Tan agent photo" class="w-14 h-14 rounded-full object-cover shadow-sm shrink-0" data-alt="Professional Singaporean female property wealth manager and licensed CEA real estate director dressed in tailored dark corporate attire with modern corporate office background. Professional headshot, approachable confidence, clear ambient studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPPJfFjqbNw7ElpHywpO4Q1ilz74FdYuP43I15hQcPcqtCud2QhSCfi_RA41r3Lwzl-5RxFpc5_Bt4OxkkIkXvdL9SV3RtNdjE2FG3OCF0r3yNwV9aNXlqsNS-zXHpdO3v7o1DziBj7jd-qSi-bgMDtgRYZQdlyPso7Th0EGBOkUnGvFLTHcgE68Kc2R7ze4mIRM-bLmFBCrveo4Wk2S61FtO_m36hqkTHB-1-hxN3GXdcaP42ddHjdA"/>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary-container truncate">Eileen Tan</h3>
+<span class="flex items-center gap-0.5 text-primary-container font-label-md text-label-md shrink-0">
+<span class="material-symbols-outlined text-[15px] text-amber-500 fill-current">star</span> 4.9 (42)
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">PropNex Realty · Snr Associate Marketing Director</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">CEA: R014829E · Lic: L3008022J</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="py-2.5 px-3 rounded-lg bg-surface-container-low text-primary-container font-label-md text-label-md flex items-center justify-center gap-1.5 active:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[17px]">call</span> Direct Call
+        </button>
+<button class="py-2.5 px-3 rounded-lg bg-surface-container-low text-primary-container font-label-md text-label-md flex items-center justify-center gap-1.5 active:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[17px]">badge</span> Full Dossier
+        </button>
+</div>
+</div>
+<!-- Official Statutory Disclaimers Footer -->
+<div class="px-space-xs py-space-sm flex flex-col gap-2 text-on-surface-variant opacity-85">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Government Data Audit Notice</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Caveat data sourced directly via Urban Redevelopment Authority (URA) Real Estate Information System (REALIS) API and Housing &amp; Development Board (HDB). School boundaries computed using Singapore Land Authority (SLA) OneMap Cadastral Coordinates. Algorithmic Valuations (AVM) are estimates and do not constitute certified statutory appraisals.
+      </p>
+</div>
+<!-- Space clearance for fixed bottom interaction sheet -->
+<div class="h-20 w-full"></div>
+</div>
+<!-- Persistent Sticky Financial Floating Action Bar (Bottom Mobile Clearance) -->
+<div class="fixed bottom-16 inset-x-0 z-40 bg-surface-container-lowest/95 backdrop-blur-xl px-margin py-3 shadow-[0_-4px_16px_rgba(20,40,63,0.08)]">
+<div class="flex items-center justify-between gap-space-sm max-w-md mx-auto">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary-container font-bold leading-none">S$1,620,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Est. S$5,134 / mo</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="h-11 px-3.5 rounded-lg bg-secondary-fixed/50 text-secondary font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-transform" onclick="handleWhatsApp()">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp</span>
+</button>
+<button class="h-11 px-4 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-md active:scale-95 transition-transform" onclick="handleBooking()">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Book Viewing</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleBookmark() {
+    const icon = document.getElementById('bookmarkIcon');
+    if (icon.innerText === 'bookmark_border') {
+      icon.innerText = 'bookmark';
+      icon.classList.add('text-secondary');
+    } else {
+      icon.innerText = 'bookmark_border';
+      icon.classList.remove('text-secondary');
+    }
+  }
+
+  function handleWhatsApp() {
+    window.open('https://api.whatsapp.com/send?phone=6591234567&text=Hi%20Eileen,%20I%20am%20enquiring%20about%20Bishan%20Loft%20%2314-06%20listed%20at%20S$1.62M%20via%20SG%20PropIntel.', '_blank');
+  }
+
+  function handleBooking() {
+    alert('Viewing schedule selector opened for Bishan Loft #14-06. Available slots: Sat 2:00 PM, Sun 11:00 AM.');
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(20,40,63,0.05)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined text-[22px]">travel_explore</span><span class="font-label-sm text-label-sm">Explore</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="valuation" href="#"><span class="material-symbols-outlined text-[22px]">calculate</span><span class="font-label-sm text-label-sm">Valuation</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="comparables" href="#"><span class="material-symbols-outlined text-[22px]">insert_chart</span><span class="font-label-sm text-label-sm">Caveats</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="profile-crm" href="#"><span class="material-symbols-outlined text-[22px]">manage_accounts</span><span class="font-label-sm text-label-sm">CRM</span></a></div></nav></body></html>
